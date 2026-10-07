@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scam Alert — Real People. Real Scams. Real Proof.</title>
+  <meta name="description" content="Scam Alert investigates suspicious websites, online services and offers with screenshots, evidence and transparent risk assessments.">
+  <link rel="canonical" href="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Scam Alert — Real People. Real Scams. Real Proof.">
+  <meta property="og:description" content="Investigations into suspicious websites, services and online scams.">
+  <meta property="og:url" content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/">
+  <meta property="og:image" content="https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/assets/hero-girl.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== INDEX HERO — FLOATING ANALYSIS WINDOWS ===== */
+.hero-orbit{position:relative;min-height:650px;overflow:visible;isolation:isolate}
+.hero-orbit-grid{position:absolute;inset:3% -7% 0 0;opacity:.23;background-image:linear-gradient(rgba(255,91,26,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(255,91,26,.12) 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(circle at 55% 48%,#000 0 42%,transparent 78%);-webkit-mask-image:radial-gradient(circle at 55% 48%,#000 0 42%,transparent 78%);pointer-events:none}
+.hero-orbit:before{content:"";position:absolute;left:49%;top:48%;width:430px;height:430px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(255,73,17,.24),rgba(255,73,17,.08) 38%,transparent 70%);filter:blur(16px);z-index:-2}
+.hero-orbit-ring{position:absolute;left:53%;top:51%;border:1px solid rgba(255,91,26,.20);border-radius:50%;transform:translate(-50%,-50%) rotate(-18deg);pointer-events:none}
+.hero-orbit-ring-a{width:480px;height:480px;box-shadow:0 0 40px rgba(255,91,26,.06)}
+.hero-orbit-ring-b{width:620px;height:270px;transform:translate(-50%,-50%) rotate(-18deg);border-color:rgba(255,91,26,.13)}
+.hero-orbit-ring-b:after{content:"";position:absolute;inset:17px;border:1px dashed rgba(255,91,26,.10);border-radius:50%}
+.hero-orbit-line{position:absolute;height:1px;background:linear-gradient(90deg,transparent,var(--orange),transparent);opacity:.45;transform-origin:left center;pointer-events:none}
+.hero-orbit-line-a{width:310px;left:11%;top:38%;transform:rotate(-13deg)}
+.hero-orbit-line-b{width:270px;right:1%;top:62%;transform:rotate(17deg)}
+.hero-girl-frame{position:absolute;z-index:3;left:50%;bottom:0;width:385px;height:585px;transform:translateX(-50%);overflow:hidden;border:1px solid rgba(255,91,26,.18);background:#090303;box-shadow:0 0 70px rgba(255,69,10,.16),0 0 0 1px rgba(255,91,26,.06);clip-path:polygon(9% 0,91% 0,100% 8%,100% 100%,0 100%,0 8%)}
+.hero-girl-frame:before{content:"";position:absolute;z-index:5;inset:9px;border:1px solid rgba(255,91,26,.16);pointer-events:none}
+.hero-girl-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;filter:saturate(1.08) contrast(1.08) brightness(.96);mix-blend-mode:screen}
+.hero-girl-glow{position:absolute;z-index:1;inset:12% 10% 0;background:radial-gradient(circle at 50% 38%,rgba(255,104,35,.28),transparent 50%);filter:blur(25px)}
+.hero-scanline{position:absolute;z-index:6;left:0;right:0;top:34%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,91,26,.85),transparent);box-shadow:0 0 12px rgba(255,91,26,.6);animation:heroScan 5s ease-in-out infinite}
+@keyframes heroScan{0%,100%{transform:translateY(-90px);opacity:.15}50%{transform:translateY(180px);opacity:.7}}
+.floating-window{position:absolute;z-index:7;border:1px solid rgba(255,91,26,.62);background:linear-gradient(145deg,rgba(20,5,5,.92),rgba(8,3,3,.80));box-shadow:0 18px 50px rgba(0,0,0,.45),0 0 28px rgba(255,69,10,.09),inset 0 0 24px rgba(255,91,26,.035);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:14px 15px;color:#eee;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 13px,100% 100%,13px 100%,0 calc(100% - 13px));animation:windowFloat 6s ease-in-out infinite}
+.floating-window:before{content:"";position:absolute;left:0;top:0;width:44px;height:1px;background:var(--orange);box-shadow:0 0 12px var(--orange)}
+.floating-window:after{content:"";position:absolute;right:9px;bottom:9px;width:6px;height:6px;border-right:1px solid var(--orange);border-bottom:1px solid var(--orange);opacity:.8}
+.window-top{display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,91,26,.18);padding-bottom:9px;margin-bottom:11px;font-size:10px;letter-spacing:.07em}
+.window-top .window-dot{width:6px;height:6px;border-radius:50%;background:var(--orange);box-shadow:0 0 9px var(--orange);flex:none}
+.window-top strong{font-size:10px;letter-spacing:.05em}.window-top b{margin-left:auto;color:var(--orange);font-size:8px;letter-spacing:.1em}
+.window-detected{left:0;top:150px;width:235px;animation-delay:-1.4s}
+.window-content{right:-2px;top:82px;width:235px;animation-delay:-3.3s}
+.window-domain{right:13px;bottom:34px;width:255px;animation-delay:-4.8s}
+.window-alert{display:flex;gap:10px;align-items:center}.window-alert .alert-icon{width:31px;height:31px;display:grid;place-items:center;border:1px solid var(--orange);color:var(--orange);font-size:17px;font-weight:900;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.window-alert strong{display:block;font-size:11px}.window-alert small{display:block;color:#7f7471;font-size:8px;margin-top:3px}
+.window-meter{display:flex;align-items:center;gap:9px;margin-top:13px}.window-meter i{height:3px;flex:1;background:linear-gradient(90deg,var(--orange) 92%,#351510 92%);box-shadow:0 0 8px rgba(255,91,26,.3)}.window-meter span{font-size:8px;color:var(--orange);font-weight:800}
+.analysis-row{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.045);font-size:9px;color:#8f8582}.analysis-row:last-child{border-bottom:0}.analysis-row strong{font-size:8px;color:#f0e8e4;letter-spacing:.06em}.window-content .analysis-row strong,.window-domain .analysis-row strong{color:var(--orange)}
+.domain-url{padding:7px 8px;margin-bottom:7px;border:1px solid rgba(255,91,26,.18);background:rgba(255,91,26,.035);font:9px ui-monospace,SFMono-Regular,Consolas,monospace;color:#bcb0ac;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hero-live-tag{position:absolute;z-index:8;left:50%;bottom:10px;transform:translateX(-50%);padding:8px 12px;border:1px solid rgba(255,91,26,.45);background:rgba(8,3,3,.78);font-size:8px;font-weight:900;letter-spacing:.15em;color:#d8ceca;backdrop-filter:blur(8px);white-space:nowrap}.hero-live-tag span{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--orange);box-shadow:0 0 10px var(--orange);margin-right:7px}.hero-live-tag em{font-style:normal;color:var(--orange);margin-left:7px}
+.hero-data-chip{position:absolute;z-index:8;padding:5px 8px;border:1px solid rgba(255,91,26,.35);background:rgba(9,3,3,.75);color:#7f7471;font:8px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em}.hero-data-chip b{color:var(--orange);margin-left:5px}.chip-a{left:16%;top:72%}.chip-b{left:40%;top:11%}.chip-c{right:1%;top:76%}
+@keyframes windowFloat{0%,100%{transform:translate3d(0,0,0) rotate(0deg)}50%{transform:translate3d(0,-8px,0) rotate(.4deg)}}
+@media(max-width:1000px){.hero-orbit{position:absolute;inset:90px 0 0;min-height:590px;opacity:.82}.hero-girl-frame{width:350px;height:540px;left:55%}.window-detected{left:3%;top:205px}.window-content{right:1%;top:105px}.window-domain{right:4%;bottom:25px}.hero-orbit-ring-b,.hero-data-chip{display:none}}
+@media(max-width:680px){.hero-orbit{inset:145px -55px 0;min-height:550px;opacity:.54}.hero-girl-frame{width:300px;height:500px;left:61%}.floating-window{padding:11px 12px}.window-detected{left:6%;top:205px;width:190px}.window-content{right:4%;top:72px;width:190px}.window-domain{right:2%;bottom:10px;width:205px}.window-top strong{font-size:8px}.window-top b{font-size:7px}.analysis-row{font-size:8px}.hero-live-tag{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-scanline,.floating-window{animation:none}}
+</style>
+
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'none'; upgrade-insecure-requests">
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true">
+    <div class="loader-mark"><span></span></div>
+    <div class="loader-label">SCAM ALERT <b>///</b></div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Scam Alert home">
+        <span class="brand-shield">⌬</span>
+        <span>SCAM <em>ALERT</em></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="header-note">Real reviews. Safer internet.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">ONLINE SCAM EXPOSER <i></i></div>
+          <h1>Real People.<br>Real Scams.<br><span>Real Proof.</span></h1>
+          <p class="hero-lead">I analyze suspicious websites, services and offers to help you avoid online scams. Here you’ll find detailed reviews, screenshots and real examples of how scammers work.</p>
+          <a class="button button-primary" href="blog.html">Explore the Investigations <span>→</span></a>
+        </div>
+
+        <div class="hero-visual hero-orbit reveal reveal-delay-2" aria-label="Live scam website analysis interface">
+          <div class="hero-orbit-grid"></div>
+          <div class="hero-orbit-ring hero-orbit-ring-a"></div>
+          <div class="hero-orbit-ring hero-orbit-ring-b"></div>
+          <div class="hero-orbit-line hero-orbit-line-a"></div>
+          <div class="hero-orbit-line hero-orbit-line-b"></div>
+          <div class="hero-girl-frame">
+            <div class="hero-girl-glow"></div>
+            <img src="assets/hero-girl.png" alt="Cybersecurity analyst" loading="eager">
+            <div class="hero-scanline"></div>
+          </div>
+
+          <div class="floating-window window-detected">
+            <div class="window-top"><span class="window-dot"></span><strong>SCAM DETECTED</strong><b>HIGH RISK</b></div>
+            <div class="window-alert"><span class="alert-icon">!</span><div><strong>Multiple red flags found</strong><small>Proceed with extreme caution.</small></div></div>
+            <div class="window-meter"><i></i><span>92% RISK</span></div>
+          </div>
+
+          <div class="floating-window window-content">
+            <div class="window-top"><span class="window-dot"></span><strong>CONTENT ANALYSIS</strong><b>LIVE</b></div>
+            <div class="analysis-row"><span>Originality</span><strong>12%</strong></div>
+            <div class="analysis-row"><span>Copied content</span><strong>YES</strong></div>
+            <div class="analysis-row"><span>Fake reviews</span><strong>DETECTED</strong></div>
+            <div class="analysis-row"><span>Language quality</span><strong>POOR</strong></div>
+          </div>
+
+          <div class="floating-window window-domain">
+            <div class="window-top"><span class="window-dot"></span><strong>DOMAIN &amp; HOSTING</strong><b>FLAGGED</b></div>
+            <div class="domain-url">https://example-scam-site.com</div>
+            <div class="analysis-row"><span>Domain age</span><strong>3 DAYS</strong></div>
+            <div class="analysis-row"><span>SSL status</span><strong>INVALID</strong></div>
+            <div class="analysis-row"><span>IP reputation</span><strong>LOW</strong></div>
+            <div class="analysis-row"><span>Blacklists</span><strong>LISTED</strong></div>
+          </div>
+
+          <div class="hero-live-tag"><span></span> LIVE WEBSITE ANALYSIS <em>///</em></div>
+          <div class="hero-data-chip chip-a">DNS <b>!</b></div>
+          <div class="hero-data-chip chip-b">WHOIS <b>+</b></div>
+          <div class="hero-data-chip chip-c">IP <b>LOW</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="investigate section-line">
+      <div class="container investigate-grid">
+        <div class="section-intro reveal">
+          <div class="eyebrow">WHAT WE INVESTIGATE <i></i></div>
+          <h2>Common Types<br>of <span>Scams</span></h2>
+          <p>Scammers use different tricks, but the goal is always the same — to take your money, data or identity. Here are the most common types we uncover.</p>
+        </div>
+        <div class="scam-types">
+          <article class="type-card reveal"><div class="type-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="29" rx="3"></rect><path d="M6 16h36M12 12h1M17 12h1M22 12h1"></path><path d="M15 24h18M15 29h11"></path></svg></div><h3>Fake Websites</h3><p>Lookalike sites that steal your data.</p></article>
+          <article class="type-card reveal"><div class="type-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 36 18 25l8 6 14-18"></path><path d="M32 13h8v8"></path><path d="M9 41h30"></path></svg></div><h3>Investment Scams</h3><p>Fake profits and trading platforms.</p></article>
+          <article class="type-card reveal"><div class="type-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="29" rx="3"></rect><path d="m7 12 17 14L41 12"></path><path d="M7 36 19 25M41 36 29 25"></path></svg></div><h3>Phishing</h3><p>Fraudulent messages and links.</p></article>
+          <article class="type-card reveal"><div class="type-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 17h30l-3 24H12L9 17Z"></path><path d="M15 17a9 9 0 0 1 18 0M18 24h12"></path></svg></div><h3>Fake Shops</h3><p>Non-existent products and services.</p></article>
+          <article class="type-card reveal"><div class="type-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m24 6 5.3 10.8L41 18.5l-8.5 8.3 2 11.7L24 33l-10.5 5.5 2-11.7L7 18.5l11.7-1.7L24 6Z"></path><circle cx="24" cy="23" r="3"></circle></svg></div><h3>Prize Scams</h3><p>Fake rewards and giveaways.</p></article>
+          <article class="type-card reveal"><div class="type-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 40 15v18L24 42 8 33V15L24 6Z"></path><path d="M16 21c2.5-3 5.2-4.5 8-4.5s5.5 1.5 8 4.5c-2.5 3-5.2 4.5-8 4.5s-5.5-1.5-8-4.5Z"></path><circle cx="24" cy="21" r="2"></circle><path d="M15 31h18"></path></svg></div><h3>AI Scams</h3><p>Deepfakes and AI-generated fraud.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reports section-line">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow">LATEST INVESTIGATIONS <i></i></div>
+            <h2>Recent Scam <span>Reports</span></h2>
+          </div>
+          <a href="blog.html" class="text-link">View all investigations →</a>
+        </div>
+
+        <!-- The homepage shows only the 3 newest investigations. The Blog page contains all articles. -->
+        <div class="report-grid" id="home-report-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="process section-line">
+      <div class="container process-grid">
+        <div class="section-intro reveal">
+          <div class="eyebrow">HOW WE CHECK <i></i></div>
+          <h2>Our Investigation <span>Process</span></h2>
+          <p>Every report follows a structured process to verify suspicious websites and offers using documented evidence.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><span>01</span><strong>Website</strong><p>Initial analysis and risk check.</p></div>
+          <div class="step reveal"><span>02</span><strong>Evidence</strong><p>Collecting data and sources.</p></div>
+          <div class="step reveal"><span>03</span><strong>Screenshots</strong><p>Visual proof and comparisons.</p></div>
+          <div class="step reveal"><span>04</span><strong>Analysis</strong><p>Technical and manual review.</p></div>
+          <div class="step reveal"><span>05</span><strong>Trust Score</strong><p>Final rating and report.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-cta">
+      <div class="container cta-inner reveal">
+        <div class="cta-symbol">!</div>
+        <div><div class="eyebrow">SEE SOMETHING SUSPICIOUS?</div><h2>Send It for Investigation.</h2><p>Help make the internet safer. Share suspicious websites, services or offers with us.</p></div>
+        <a class="button button-primary" href="contact.html">Report a Scam <span>→</span></a>
+        <div class="cta-proof">◈ <span>Together we can<br>stop online fraud.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-shield">⌬</span><span>SCAM <em>ALERT</em></span></a><p>Real people. Real scams. Real proof.</p></div>
+      <div><strong>Quick Links</strong><a href="index.html">Home</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div>
+      <div><strong>Resources</strong><a href="blog.html">Scam Types</a><a href="blog.html">Safety Tips</a><a href="contact.html">Report a Scam</a></div>
+      <div><strong>Subscribe</strong><p>Get the latest scam alerts and investigations.</p><form class="subscribe"><input type="email" placeholder="Your email address" aria-label="Email"><button aria-label="Subscribe">→</button></form></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Scam Alert. All rights reserved.</span><span>Designed for a safer internet.</span></div>
+  </footer>
+  <script src="articles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
